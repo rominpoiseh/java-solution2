@@ -1,0 +1,18 @@
+//Apresentar a mensagem "A=" seguido pelo valor da variável area, conforme exemplo abaixo, com 4 casas após o ponto decimal. Utilize variáveis de dupla precisão (double). 
+//Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
+
+import java.util.Scanner;
+
+public class circularArea {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double A, N, RAIO;
+        N = 3.14159;
+        RAIO = sc.nextDouble();
+        RAIO = Math.pow(RAIO, 2);
+        A = RAIO * N;
+        
+        System.out.printf("A=%.4f%n" , A);
+        sc.close();
+    }
+}
